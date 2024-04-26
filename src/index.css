@@ -1,0 +1,35 @@
+/* Navbar */
+.navBar{
+    background-color: #FFF540;
+    color: #000000;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+
+.carouselImage {
+    width: 100%;  
+    height: auto; 
+    max-height: 600px; 
+}
+
+/* Footer */
+.footer{
+    background-color: #FFF540;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.divFooterParrafo{
+    width: 60%;
+}
+.divFooterIcon{
+    text-align: start;
+}
+.footer i{
+    font-size: 22px;
+    padding: 10px;
+}

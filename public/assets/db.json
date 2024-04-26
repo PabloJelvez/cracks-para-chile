@@ -1,0 +1,85 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nombre": "Pablo",
+        "apellido": "Jelvez",
+        "email": "usuario1@ejemplo.com",
+        "contraseña": "contraseña1",
+        "tipo": "administrador"
+      },
+      {
+        "id": 2,
+        "nombre": "Carlos",
+        "apellido": "Perez",
+        "email": "usuario2@ejemplo.com",
+        "contraseña": "contraseña2",
+        "tipo": "administrador"
+      },
+      {
+        "id": 3,
+        "nombre": "Mario",
+        "apellido": "Rojas",
+        "email": "usuario3@ejemplo.com",
+        "contraseña": "contraseña3",
+        "tipo": "administrador"
+      },
+      {
+        "id": 4,
+        "nombre": "Raul",
+        "apellido": "Ruiz",
+        "email": "usuario4@ejemplo.com",
+        "contraseña": "contraseña4",
+        "tipo": "administrador"
+      },
+      {
+        "id": 5,
+        "nombre": "Juan",
+        "apellido": "Moreno",
+        "email": "usuario5@ejemplo.com",
+        "contraseña": "contraseña5",
+        "tipo": "administrador"
+      },
+      {
+        "id": 6,
+        "nombre": "Daniela",
+        "apellido": "Gonzalez",
+        "email": "usuario6@ejemplo.com",
+        "contraseña": "contraseña6",
+        "tipo": "usuario"
+      },
+      {
+        "id": 7,
+        "nombre": "Maria",
+        "apellido": "Sierra",
+        "email": "usuario7@ejemplo.com",
+        "contraseña": "contraseña7",
+        "tipo": "usuario"
+      },
+      {
+        "id": 8,
+        "nombre": "Catalina",
+        "apellido": "Carmona",
+        "email": "usuario8@ejemplo.com",
+        "contraseña": "contraseña8",
+        "tipo": "usuario"
+      },
+      {
+        "id": 9,
+        "nombre": "Jose",
+        "apellido": "Marin",
+        "email": "usuario9@ejemplo.com",
+        "contraseña": "contraseña9",
+        "tipo": "usuario"
+      },
+      {
+        "id": 10,
+        "nombre": "Berta",
+        "apellido": "Diaz",
+        "email": "usuario10@ejemplo.com",
+        "contraseña": "contraseña10",
+        "tipo": "usuario"
+      }
+    ]
+  }
+  
