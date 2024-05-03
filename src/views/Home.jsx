@@ -1,14 +1,16 @@
-import Footer from "../components/Footer.jsx";
-import Header from "../components/Header.jsx";
-import Nav from "../components/Nav";
+import Card from "../components/Card";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import ProductsRender from "../components/ProductsRender";
 
-
-const Home = () =>{
+const Home = () => {
     return(
         <>
-       <Nav />
-       <Header />
-       <Footer />
+        <Navbar />
+        <Header />
+        <ProductsRender>
+            <Card />
+        </ProductsRender>
         </>
     );
 };

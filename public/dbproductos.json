@@ -1,0 +1,56 @@
+[
+    {
+      "desc": "Los adidas Predator Elite son una bota de fútbol excepcional que combina precisión, control y versatilidad. Su exterior cuenta con 406 puntos en relieve llamados Demonskin, que permiten un agarre único al tocar el balón. Además, la tecnología HybridTouch 2.0 en el empeine ofrece un ajuste óptimo. Las inserciones Strikeskin proporcionan un control excepcional durante el juego, y la zona superior de cuello textil es suave y flexible. En resumen, estos zapatos están diseñados para ayudarte a destacar en el campo de fútbol.",
+      "id": "P001",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Zapatos_de_Futbol_Predator_Elite_Lengueta_Plegable_Terreno_Firme_Negro_IE1809_HM1.avif?alt=media&token=8ca4f108-fe61-4fa8-b68b-f7bd5f90267d",
+      "features": ["Demonskin", "HybridTouch 2.0", "Inserciones Strikeskin", "Zona superior de cuello textil"],
+      "name": "Zapatos de futbol Predator Elite",
+      "price": 299990,
+      "liked": false
+    },
+    {
+      "desc": "Los zapatos de fútbol Copa Pure 2 Elite de adidas destacan por su comodidad y rendimiento. Su talón acolchado proporciona protección y soporte, mientras que el material reciclado los hace más sostenibles. La suela TorsionFrame ofrece control y tracción, y los tacos semicónicos permiten giros y arrancadas precisas en el campo. En resumen, los Copa Pure 2 Elite son la elección perfecta para jugadores exigentes.",
+      "id": "P002",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Zapatos_de_Futbol_Copa_Pure_2_Elite_KT_Terreno_Firme_Beige_IF5443_HM1.avif?alt=media&token=186eff53-45cf-4a18-b6b4-08f05133b338",
+      "features": ["Talón Acolchado", "Material Reciclado", "Suela TorsionFrame", "Diseño de Tacos Semicónicos"],
+      "name": "Zapatos de futbol Copa Pure 2 Elite",
+      "price": 289990,
+      "liked": false
+    },
+    {
+      "desc": "El Adidas Tango Glider es un balón de fútbol que combina durabilidad, precisión y versatilidad. Su superficie de TPU cosida a máquina garantiza resistencia y un tacto suave. Además, la cámara interna de butilo mantiene la presión constante. Este balón es ideal para cualquier tipo de cancha, ya sea hierba natural o artificial.",
+      "id": "P003",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Pelota_de_Futbol_Tango_Glider_UNISEX_Blanco_S12241_01_standard.avif?alt=media&token=42bd04d9-b6f7-4123-98f1-0a8b719edbea",
+      "features": ["Durabilidad y Resistencia", "Mantención de la Presión", "Tacto Suave y Preciso", "Versatilidad en Superficies"],
+      "name": "Pelota de futbol Tango Glider",
+      "price": 22990,
+      "liked": false
+    },
+    {
+      "desc": "Pelota Eliminatorias UCL Training, utilizada durante la fase eliminatoria de la UEFA Champions League 2023/24, presenta un diseño inspirado en Londres con vibrantes gráficos de leones rugientes. Su textura superficial PRISMA ofrece precisión y agarre, mientras que la fabricación sin costuras garantiza durabilidad. Disponible para su compra, este balón es ideal para cualquier tipo de cancha.",
+      "id": "P004",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Pelota_Eliminatorias_UCL_Training_23-24_Blanco_IN9332_01_standard.avif?alt=media&token=512adfa6-41b3-44ef-8024-edd005d6494b",
+      "features": ["Diseño Inspirado en Londres", "Textura Superficial PRISMA", "Fabricación sin Costuras", "Disponible para Compra"],
+      "name": "Pelota Eliminatorias UCL Training",
+      "price": 24990,
+      "liked": false
+    },
+    {
+      "desc": "La Camiseta local de la Selección de Chile 2024, diseñada por adidas, presenta un diseño inspirado en el azul del cielo chileno. Fabricada en 100% poliéster, esta camiseta es resistente y duradera, con detalles cuidadosamente bordados, como el escudo de la Selección de Chile. Ideal para los hinchas que desean llevar el orgullo nacional a todas partes.",
+      "id": "P005",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Camiseta_Local_Chile_2024_Rojo_IP8453_01_laydown.avif?alt=media&token=d6926c12-2067-4649-a822-f3c4687934b4",
+      "features": ["Diseño Inspirado en el Cielo Chileno", "Tela de Alta Calidad", "Escudos y Logos Bordados", "Versatilidad y Comodidad"],
+      "name": "Camiseta local Chile 2024",
+      "price": 39990,
+      "liked": false
+    },
+    {
+      "desc": "Los calcetines de fútbol Adidas Adi 24 Team Rojo son una elección ideal para los jugadores apasionados. Con un diseño hasta la rodilla, están fabricados con materiales de alta calidad, incluyendo poliéster reciclado y algodón. La tecnología AEROREADY mantiene los pies secos durante el juego, y su ajuste específico garantiza comodidad y protección. Estos calcetines rojos y blancos son una excelente adición a tu equipo deportivo.",
+      "id": "P006",
+      "img": "https://firebasestorage.googleapis.com/v0/b/app-de-prueba-ed296.appspot.com/o/Calcetines_adi_24_Rojo_IT1879_03_standard.avif?alt=media&token=bd2ec211-7d8f-4a1d-b874-5c191b71ccf7",
+      "features": ["Diseño Hasta la Rodilla", "Composición de Materiales", "Tecnología AEROREADY", "Amortiguación y Ajuste Específico"],
+      "name": "Calcetines adi 24 Rojo",
+      "price": 14990,
+      "liked": false
+    }
+  ]

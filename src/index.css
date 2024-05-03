@@ -1,35 +1,38 @@
-/* Navbar */
-.navBar{
-    background-color: #FFF540;
-    color: #000000;
-}
-.logo{
-    width: 60px;
-    height: 60px;
+.navbar {
+    background: #17a2b8;
+  }
+  body{
+    background-color: aqua;
+  }
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../public/assets/Header.jpg");
+    background-size: cover;
+    height: 40vh;
+  }
+  
+  .logo-principal{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .logo-principal:hover{
+    color: #ddd4d4;
+  }
+  
+  li{
+    list-style: none;
+  }
+
+  /* ... tus otros estilos ... */
+
+.image-container {
+  position: relative;
 }
 
-
-.carouselImage {
-    width: 100%;  
-    height: auto; 
-    max-height: 600px; 
-}
-
-/* Footer */
-.footer{
-    background-color: #FFF540;
-    color: #000000;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-}
-.divFooterParrafo{
-    width: 60%;
-}
-.divFooterIcon{
-    text-align: start;
-}
-.footer i{
-    font-size: 22px;
-    padding: 10px;
+.icon-heart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
