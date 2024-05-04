@@ -3,6 +3,7 @@ import Home from "./views/Home";
 import Details from "./views/Details";
 import DetailsCart from "./views/DetailsCart";
 import Favorites from "./views/Favorites"; // Asegúrate de importar el componente Favorites
+import Navbar from "./components/Navbar";
 
 function App() {
   return (

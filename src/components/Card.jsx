@@ -2,25 +2,30 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ProductsContext } from "../context/ProductsProvider";
 import { formatNumber } from "../helpers/formatNumber";
+import IconHeart from "../components/IconHeart.jsx";
 
 const Card = () => {
-    const {products, addToCart} = useContext(ProductsContext);
+  const { products, addToCart, toggleFavorite } = useContext(ProductsContext);
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return(
-        <>
+  return (
+    <>
       {products.map((product) => (
-        <div
-          key={product.id}
-          className="col"
-        >
+        <div key={product.id} className="col">
           <div className="card">
-            <img
-              className="card-img-top"
-              src={product.img}
-              alt=""
-            />
+          <div className="image-container">
+              <img className="card-img-top" src={product.img} alt="" />
+              <div className="icon-heart">
+                <IconHeart
+                  filled={product.liked}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    toggleFavorite(product.id);
+                  }}
+                />
+              </div>
+            </div>
             <div className="card-body">
               <h4 className="card-title text-capitalize">{product.name}</h4>
               <hr />
@@ -30,7 +35,7 @@ const Card = () => {
 
               <ul>
                 {product.features.map((feature, i) => (
-                  <li key={i}>&#127829; {feature}</li>
+                  <li key={i}> ⚽ {feature}</li>
                 ))}
               </ul>
             </div>
@@ -45,22 +50,22 @@ const Card = () => {
                 className="btn btn-info text-white"
                 onClick={() => navigate(`/products/${product.id}`)}
               >
-                Ver Más &#128064;
+                Ver Más 
               </button>
 
               <button
                 className="btn btn-danger"
                 onClick={() => addToCart(product)}
-               
               >
-                Añadir &#128722;
+                Añadir al carrito
               </button>
             </div>
           </div>
         </div>
       ))}
     </>
-    );
+  );
 };
 
 export default Card;
+

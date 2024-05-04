@@ -15,7 +15,7 @@ const Navbar = () =>{
                     to="/"
                     className="logo-principal mx-1 mb-0"
                     >
-                    <h4 className="mb-0">&#127829; Cracks para Chile</h4>
+                    <h4 className="mb-0"> ⚽ Cracks para Chile</h4>
                     </Link>
                     <Link
                     to="/favorites"

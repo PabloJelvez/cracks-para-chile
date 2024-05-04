@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { ProductsContext } from "../context/ProductsProvider";
 import { formatNumber } from "../helpers/formatNumber";
-import IconHeart from "../components/IconHeart"; 
+import IconHeart from "../components/IconHeart.jsx"; 
 
 const Favorites = () => {
-    const {favorites, toggleFavorite} = useContext(ProductsContext);
+    const {products, toggleFavorite} = useContext(ProductsContext);
+    const favorites = products.filter(product => product.liked);
 
     return(
         <>
@@ -28,7 +29,7 @@ const Favorites = () => {
 
               <ul>
                 {product.features.map((feature, i) => (
-                  <li key={i}>🍕 {feature}</li>
+                  <li key={i}>⚽ {feature}</li>
                 ))}
               </ul>
             </div>
@@ -38,14 +39,9 @@ const Favorites = () => {
             </h2>
 
             <div className="d-flex justify-content-around mb-4">
-              <button
-                className="btn btn-info text-white"
-                onClick={() => toggleFavorite(product)}
-              >
-                Quitar de Favoritos 💔
-              </button>
+             
 
-              <IconHeart filled={true} onClick={() => toggleFavorite(product)} /> {/* Permite hacer clic en el corazón para quitar un producto de los favoritos */}
+              <IconHeart filled={true} onClick={() => toggleFavorite(product.id)} /> {/* Permite hacer clic en el corazón para quitar un producto de los favoritos */}
 
             </div>
           </div>
@@ -56,3 +52,6 @@ const Favorites = () => {
 };
 
 export default Favorites;
+
+
+

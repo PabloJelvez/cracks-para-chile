@@ -5,7 +5,6 @@ export const ProductsContext = createContext();
 const ProductsProvider = ({children}) => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    const [favorites, setFavorites] = useState([]);
 
     useEffect(() => {
         getData();
@@ -13,8 +12,10 @@ const ProductsProvider = ({children}) => {
 
     const getData = async () => {
         const res = await fetch("/dbproductos.json");
-        const products = await res.json();
-        setProducts(products);
+        const productsData = await res.json();
+        // Asegúrate de que cada producto tenga una propiedad 'liked'
+        const productsWithLiked = productsData.map(product => ({ ...product, liked: false }));
+        setProducts(productsWithLiked);
     };
 
     const addToCart = ({id, price, name, img}) => {
@@ -43,27 +44,15 @@ const ProductsProvider = ({children}) => {
       setCart([...cart]);
     };
 
-    const toggleFavorite = (product) => {
-      // Encuentra el producto en la lista de productos
-      const productIndex = products.findIndex((p) => p.id === product.id);
-      
-      if (productIndex >= 0) {
-        // Si el producto ya está en favoritos, lo eliminamos
-        if (products[productIndex].liked) {
-          setFavorites(favorites.filter((_, index) => index !== productIndex));
-        } else {
-          // Si el producto no está en favoritos, lo añadimos
-          setFavorites([...favorites, products[productIndex]]);
-        }
-        
-        // Actualiza el atributo 'liked' del producto
-        products[productIndex].liked = !products[productIndex].liked;
-      }
+    const toggleFavorite = (productId) => {
+      setProducts(products.map(product => 
+        product.id === productId ? { ...product, liked: !product.liked } : product
+      ));
     };
 
     return(
       <ProductsContext.Provider
-      value={{products, cart, setCart, addToCart, increment, decrement, favorites, toggleFavorite}}
+      value={{products, cart, setCart, addToCart, increment, decrement, toggleFavorite}}
       >
         {children}
       </ProductsContext.Provider>

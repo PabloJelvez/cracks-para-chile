@@ -27,12 +27,27 @@
 
   /* ... tus otros estilos ... */
 
-.image-container {
-  position: relative;
+  .image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
 
 .icon-heart {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 0;
 }
+
+/* Footer */
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
