@@ -1,12 +1,12 @@
- 
+import IconHeart from "../components/IconHeart";
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavigationBar";
 import { ProductsContext } from "../context/ProductsProvider";
 
 const Details = () => {
     const [productDetail, setProductDetail] = useState({});
-    const {products, addToCart} = useContext(ProductsContext);
+    const {products, addToCart, toggleFavorite} = useContext(ProductsContext);
     const {id} = useParams();
 
     const getDatos = () => {
@@ -20,7 +20,6 @@ const Details = () => {
 
     return(
         <>
-        <Navbar />
         <div className="container mt-5">
           <div className="card mb-3 estilos">
             <div className="row g-0">
@@ -30,6 +29,15 @@ const Details = () => {
                   className="img-fluid estilos rounded-start"
                   alt={productDetail.name}
                 />
+                <div className="icon-heart">
+                <IconHeart
+                  filled={productDetail.liked}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    toggleFavorite(productDetail.id);
+                  }}
+                />
+                </div>
               </div>
               <div className="col-md-6">
                 <div className="card-body">
@@ -45,7 +53,7 @@ const Details = () => {
                   <div className="d-flex justify-content-around">
                     <h4>Precio: ${productDetail.price}</h4>
                     <button
-                      className="btn btn-danger"
+                      className="btn btn-details"
                       onClick={() => addToCart(productDetail)}
                     >
                       Añadir al carrito

@@ -1,5 +1,11 @@
+/* Estilos Navbar */
 .navbar {
-    background: #17a2b8;
+    background-color: #FFF540;
+    color: #000000;
+  }
+  .logoNav{
+    width: 60px;
+    height: 60px;
   }
   body{
     background-color: aqua;
@@ -10,34 +16,326 @@
     background-size: cover;
     height: 40vh;
   }
-  
-  .logo-principal{
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 2rem;
+
+  /* Estilos LandingPage */
+  .divLandingPage {
+    position: relative;
+}
+
+.imgLanding {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.logoImage {
+    width: 100%;
+    height: auto;
+}
+
+.textContainer {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.textParagraphLanding {
+  font-weight: 700;
+    color: #FFFFFF;
+}
+.buttonContainer {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.landingButton {
+  padding: 10px 20px;
+  width: 150px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+.landingButton-reg{
+  background-color: #9C2E7B;
+}
+.landingButton-reg:hover{
+  background-color: #FFF540;
+  color: #282820;
+}
+.landingButton-log{
+  background-color: #282820;
+}
+.landingButton-log:hover{
+  background-color: #FFF540;
+  color: #282820;
+}
+
+/* Estilos Login */
+
+.containerLogin {
+  background-image: url("./assets/img/fondo-campo-futbol-degradado_52683-65681.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divContentLogin {
+  background-color: #FFF540; 
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login-input {
+  margin-bottom: 15px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sesion-submit, .login-submit {
+  width: 48%; 
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.sesion-submit:hover {
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+.login-submit:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+
+
+  /* Estilos AboutUs */
+  .containerAboutUs {
+    background-image: url("./assets/img/fondo-campo-futbol-degradado_52683-65681.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .logo-principal:hover{
-    color: #ddd4d4;
+  
+  .divContentAboutUs {
+    background-color: #FFF540; 
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
   }
   
-  li{
-    list-style: none;
+  .imgContainer img {
+    width: 60%;
+    height: auto;
   }
 
-  /* ... tus otros estilos ... */
+  /* Estilos Card Tienda */
+  .btn-card{
+    background-color: #9C2E7B !important;
+    color: #FFFFFF !important;
+  }
+  .btn-card:hover{
+    background-color: #FFF540 !important;
+    color: #282820 !important;
+  }
+  
+  /* Estilos Profile */
+ 
+.fotoPerfil {
+  width: 250px;
+  height: 250px;
+  margin: 2rem 0;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+}
 
+.tab-principal {
+  display: block !important;
+}
+
+.container-profileView {
+  display: flex;
+}
+
+.editar-perfil-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btns-perfil {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+.btn-editarPerfil {
+  background-color: #9C2E7B !important;
+}
+
+.btn-editarPerfil:hover {
+  background-color:#FFF540 !important;
+  color: #282820 !important;
+}
+
+.btn-cerrar-sesion-boton {
+  background-color:#9C2E7B !important;
+}
+.btn-cerrar-sesion-boton:hover {
+  background-color:#FFF540 !important;
+  color: #282820 !important;
+}
+
+.btn-cerrar-sesion {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  margin: 0.2rem 0.2rem;
+}
+.btn-cerrar-sesion:hover {
+  color: rgb(85, 85, 85);
+}
+
+.boxDatos-miPerfil {
+  background-color:#282820;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.boxDatos-miPerfil li ul {
+  list-style: none;
+}
+.boxDatos-miPerfil ul {
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+}
+
+.btn-guardar-cambios {
+  background-color:#9C2E7B !important;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+}
+.btn-guardar-cambios:hover {
+  background-color:#FFF540 !important;
+  color: #282820 !important;
+}
+
+/* Estilos Favorites */
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favorite-card {
+  width: 250px; 
+  margin: 10px;
+}
+
+.favorite-card-img {
+  width: 100%;
+  height: auto;
+}
+
+.favorite-card-body {
+  padding: 10px;
+}
+
+.favorite-card-title {
+  font-size: 14px; 
+}
+
+.favorite-card-text {
+  font-size: 14px; 
+}
+.li-favorites{
+  list-style: none;
+  font-size: 12px;
+  text-align: start;
+}
+.favorite-card-price {
+  font-size: 16px; 
+}
+.btn-favorites{
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.btn-favorites:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+
+/* Estilos Details */
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.icon-heart {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 0;
+}
+.btn-details{
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.btn-details:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+
+
+/* Estilos para  visualizar iconHeart */
   .image-container {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
-
 .card-img-top {
     width: 100%;
     height: auto;
 }
-
 .icon-heart {
     position: absolute;
     top: 5px;
@@ -45,9 +343,21 @@
     z-index: 0;
 }
 
+/* Estilos Carrito */
+.btn-pay{
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.btn-pay:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+
 /* Footer */
   .footer{
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
   }

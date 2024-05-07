@@ -47,14 +47,14 @@ const Card = () => {
             <div className="d-flex justify-content-around mb-4">
               <button
                 to={`product/${product.id}`}
-                className="btn btn-info text-white"
+                className="btn btn-card"
                 onClick={() => navigate(`/products/${product.id}`)}
               >
                 Ver Más 
               </button>
 
               <button
-                className="btn btn-danger"
+                className="btn btn-card"
                 onClick={() => addToCart(product)}
               >
                 Añadir al carrito

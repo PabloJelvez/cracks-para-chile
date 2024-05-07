@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavigationBar";
 import { ProductsContext } from "../context/ProductsProvider";
 import { formatNumber } from "../helpers/formatNumber";
 
@@ -10,7 +10,6 @@ const DetailsCart = () => {
 
     return(
         <>
-        <Navbar />
         <div className="carrito p-5">
           <div className="bg-light w-75 m-auto p-5">
             <h5>Detalles del pedido:</h5>
@@ -50,7 +49,7 @@ const DetailsCart = () => {
                 </div>
               ))}
               <h2 className="my-4">Total: ${formatNumber(total)}</h2>
-              <button className="btn btn-success">Ir a Pagar</button>
+              <button className="btn btn-pay">Ir a Pagar</button>
             </div>
           </div>
         </div>

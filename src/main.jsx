@@ -7,12 +7,8 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
     <ProductsProvider>
     <App />
     </ProductsProvider>
-    </BrowserRouter>
-    
-  </React.StrictMode>,
+   
 )
