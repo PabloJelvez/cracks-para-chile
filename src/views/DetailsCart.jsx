@@ -11,9 +11,9 @@ const DetailsCart = () => {
     return(
         <>
         <div className="carrito p-5">
-          <div className="bg-light w-75 m-auto p-5">
+          <div className="carritoContent  w-75 m-auto p-5">
             <h5>Detalles del pedido:</h5>
-            <div className="p3 bg-white">
+            <div className="p3">
               {cart.map((producto, i) => (
                 <div
                   key={i}

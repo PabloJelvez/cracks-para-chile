@@ -45,7 +45,7 @@ const Details = () => {
                     {productDetail.name}
                   </h5>
                   <p className="card-text">{productDetail.desc}</p>
-                  <ul>
+                  <ul className="ulDetails" >
                     {productDetail.features?.map((feature, i) => (
                       <li key={i}>⚽ {feature}</li>
                     ))}

@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Estilos Navbar */
 .navbar {
     background-color: #FFF540;
@@ -7,14 +12,10 @@
     width: 60px;
     height: 60px;
   }
-  body{
-    background-color: aqua;
-  }
-  .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../../public/assets/Header.jpg");
-    background-size: cover;
-    height: 40vh;
+
+  .imgCarousel{
+    width: 100%;
+    height: 450px;
   }
 
   /* Estilos LandingPage */
@@ -83,6 +84,63 @@
   background-color: #FFF540;
   color: #282820;
 }
+
+/* Estilos SignUp */
+
+.containerSignUp {
+  background-image: url("./assets/img/fondo-campo-futbol-degradado_52683-65681.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divContentSignUp {
+  background-color: #FFF540; 
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.signup-input {
+  margin-bottom: 15px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.container-btn {
+ display: flex;
+ justify-content: center !important;
+
+}
+
+.sesion-submit, .signup-submit {
+  width: 48%; 
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.sesion-submit:hover {
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+.signup-submit:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+
 
 /* Estilos Login */
 
@@ -166,6 +224,10 @@
   }
 
   /* Estilos Card Tienda */
+
+  .ulCards li{
+    list-style: none;
+  }
   .btn-card{
     background-color: #9C2E7B !important;
     color: #FFFFFF !important;
@@ -309,12 +371,14 @@
   width: 100%;
   overflow: hidden;
 }
-
 .icon-heart {
   position: absolute;
   top: 5px;
   right: 5px;
   z-index: 0;
+}
+.ulDetails li{
+  list-style: none;
 }
 .btn-details{
   background-color: #9C2E7B !important;
@@ -344,6 +408,15 @@
 }
 
 /* Estilos Carrito */
+.carrito{
+  background-image: url("./assets/img/fondo-campo-futbol-degradado_52683-65681.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.carritoContent{
+  background-color: #FFF540 !important;
+}
 .btn-pay{
   background-color: #9C2E7B !important;
   color: #FFFFFF !important;
@@ -360,4 +433,22 @@
     width: 100%;
     background-color: #000000;
     color: #FFFFFF;
+  }
+  .footerContent{
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-form{
+    width: 45%;
+  }
+  .btn-footer{
+    background-color: #9C2E7B !important;
+    width: 150px;
+  }
+  .btn-footer:hover{
+    background-color: #FFF540 !important;
+    color: #282820 !important;
+  }
+  .footer-rrss{
+    width: 45%;
   }

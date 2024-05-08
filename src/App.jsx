@@ -10,6 +10,7 @@ import Login from "./views/Login";
 import AboutUs from "./views/AboutUs";
 import Profile from "./views/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
+import SignUp from "./views/SignUp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="iniciar_sesion" element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/Quienes-somos" element={<AboutUs />} />
+            <Route path="/registrarse" element={<SignUp />} />
             <Route
               path="/profile"
               element={

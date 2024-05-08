@@ -31,6 +31,15 @@ const ProductsProvider = ({children}) => {
 
   const updateUserData = (newUserData) => {
     setUserData(newUserData);
+    localStorage.setItem("token", "test_token_123456789");
+    setIsLoggedIn(true);
+    setLoginData((prevLoginData) => [
+      ...prevLoginData,
+      {
+        user: newUserData.username,
+        password: newUserData.password,
+      },
+    ]);
   };
 
   const loginUser = (user, pass) => {
@@ -127,4 +136,5 @@ const ProductsProvider = ({children}) => {
 };
 
 export default ProductsProvider;
+
 

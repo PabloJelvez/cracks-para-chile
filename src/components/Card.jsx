@@ -33,7 +33,7 @@ const Card = () => {
                 <b>Caracteristicas:</b>
               </p>
 
-              <ul>
+              <ul className="ulCards">
                 {product.features.map((feature, i) => (
                   <li key={i}> ⚽ {feature}</li>
                 ))}

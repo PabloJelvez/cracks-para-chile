@@ -1,8 +1,11 @@
 import imgCracksParaChile from "../assets/img/logo-cracks-para-chile.png";
+import Header from "../components/Header";
 
 const AboutUs = () => {
   return (
-    <div className="containerAboutUs">
+    <>
+    <Header />
+        <div className="containerAboutUs">
       <div className="divContentAboutUs">
         <h2>¿Quienes somos?</h2>
         <div className="imgContainer">
@@ -15,6 +18,9 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
+    </>
+    
+
   );
 };
 
