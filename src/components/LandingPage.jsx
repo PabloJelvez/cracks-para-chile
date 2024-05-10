@@ -5,17 +5,23 @@ import logoImage from "../assets/img/logo-cracks-para-chile.png"
 const LandingPage = () => {
     return (
         <div className="divLandingPage">
-            <img className="imgLanding" src={imgLanding1} alt="" />
-            <div className="logoContainer">
-                <img className="logoImage" src={logoImage} alt="Logo" />
+
+            <div className="divInfoContainer row">
+                  <div className="logoContainer col-12 col-md-6 col-lg-6">
+                <img className="logoImage text-center ps-5" src={logoImage} alt="Logo" />
             </div>
-            <div className="textContainer">
-                <h2 className="textParagraphLanding">Visita nuestra <br/>tienda<br/>y conviertete<br/>en un crack<br/>dentro de la cancha</h2>
+            <div className="textContainer col-12 col-md-6 col-lg-6">
+                <h2 className="textParagraphLanding text-center p-2">Visita nuestra <br/>tienda<br/>y conviertete<br/>en un crack<br/>dentro de la cancha</h2>
             </div>
+
+            </div>
+          
+
             <div className="buttonContainer">
                 <Link to="/registrarse" className="landingButton landingButton-reg">Registrarse</Link>
                 <Link to="/iniciar_sesion" className="landingButton landingButton-log">Iniciar sesión</Link>
             </div>
+
         </div>
     );
 };

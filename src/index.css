@@ -20,33 +20,22 @@
 
   /* Estilos LandingPage */
   .divLandingPage {
-    position: relative;
-}
-
-.imgLanding {
-    width: 100%;
+    background-image: url("./assets/img/fondo-campo-futbol-degradado_52683-65681.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    object-fit: cover;
+  
 }
-
-.logoContainer {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
+.divInfoContainer{
+  width: 98%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
 }
 
 .logoImage {
-    width: 100%;
+    width: 92%;
     height: auto;
-}
-
-.textContainer {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    text-align: center;
 }
 
 .textParagraphLanding {
@@ -439,7 +428,7 @@
     justify-content: space-around;
   }
   .footer-form{
-    width: 45%;
+    width: 48%;
   }
   .btn-footer{
     background-color: #9C2E7B !important;
@@ -450,5 +439,11 @@
     color: #282820 !important;
   }
   .footer-rrss{
-    width: 45%;
+    width: 48%;
+  }
+  .ul-rrss{
+    text-align: start;
+  }
+  .ul-rrss li{
+    list-style-type: none;
   }
