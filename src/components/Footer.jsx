@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
-    <div className="footer text-center p-3 ">
+    <div className="footer text-center p-3">
       <div className="footerContent row">
         <div className="footer-form col-12 col-md-6 col-lg-6">
           <h3 id="footer" className="my-3">Contáctanos</h3>

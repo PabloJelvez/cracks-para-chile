@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 /* Estilos Navbar */
 .navbar {
@@ -9,8 +11,8 @@
     color: #000000;
   }
   .logoNav{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .imgCarousel{
@@ -42,14 +44,7 @@
   font-weight: 700;
     color: #FFFFFF;
 }
-.buttonContainer {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-}
+
 
 .landingButton {
   padding: 10px 20px;
@@ -72,6 +67,44 @@
 .landingButton-log:hover{
   background-color: #FFF540;
   color: #282820;
+}
+/* MARQUEE DEL HOME, TXT EN MOVIMIENTO */
+.marquee-container {
+  width: 100%;
+  color: white;
+  background-color: #000;
+}
+
+.marquee {
+  height: 25px;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.marquee div {
+  display: block;
+  width: 250%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 9s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -125%;
+  }
 }
 
 /* Estilos SignUp */
@@ -128,6 +161,18 @@
 .signup-submit:hover{
   background-color: #FFF540 !important;
   color: #282820 !important;
+}
+/* Media query SignUp para pantallas pequeñas (sm) */
+@media (max-width: 576px) {
+  .divContentSignUp {
+    width: 95%;
+  }
+}
+/* Media query SignUp para pantallas medianas (md)*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .divContentSignUp {
+    width: 80%;
+  }
 }
 
 
@@ -186,6 +231,19 @@
   color: #282820 !important;
 }
 
+/* Media query Login para pantallas pequeñas (sm) */
+@media (max-width: 576px) {
+  .divContentLogin {
+    width: 95%;
+  }
+}
+/* Media query Login para pantallas medianas (md)*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .divContentLogin {
+    width: 80%;
+  }
+}
+
 
   /* Estilos AboutUs */
   .containerAboutUs {
@@ -211,6 +269,18 @@
     width: 60%;
     height: auto;
   }
+  /* Media query AboutUs para pantallas pequeñas (sm) */
+@media (max-width: 576px) {
+  .divContentAboutUs {
+    width: 95%;
+  }
+}
+/* Media query AboutUs para pantallas medianas (md)*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .divContentAboutUs {
+    width: 80%;
+  }
+}
 
   /* Estilos Card Tienda */
 
@@ -402,9 +472,11 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  padding-bottom: 50px;
 }
 .carritoContent{
   background-color: #FFF540 !important;
+  width: 95%;
 }
 .btn-pay{
   background-color: #9C2E7B !important;
