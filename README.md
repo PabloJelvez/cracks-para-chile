@@ -1,5 +1,7 @@
-# Avance para evaluación hito FrontEnd
+# Deploy en Netlify proyecto completo
 
-Falta implementar algunas vistas y modificar los estilos de la página, ademas de crear las vistas responsivas.
+https://main--lucent-youtiao-3bd5f8.netlify.app/
+
+
 
 
