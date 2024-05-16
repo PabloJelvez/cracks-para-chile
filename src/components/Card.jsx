@@ -4,17 +4,29 @@ import { ProductsContext } from "../context/ProductsProvider";
 import { formatNumber } from "../helpers/formatNumber";
 import IconHeart from "../components/IconHeart.jsx";
 
-const Card = () => {
+const Card = ({ search, sortProducts }) => {
   const { products, addToCart, toggleFavorite } = useContext(ProductsContext);
 
   const navigate = useNavigate();
 
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const sortedProducts = [...filteredProducts].sort((a, b) => {
+    if (sortProducts === "ascendente") {
+      return a.price - b.price;
+    } else {
+      return b.price - a.price;
+    }
+  });
+
   return (
     <>
-      {products.map((product) => (
+      {sortedProducts.map((product) => (
         <div key={product.id} className="col">
           <div className="card">
-          <div className="image-container">
+            <div className="image-container">
               <img className="card-img-top" src={product.img} alt="" />
               <div className="icon-heart">
                 <IconHeart
@@ -68,4 +80,5 @@ const Card = () => {
 };
 
 export default Card;
+
 

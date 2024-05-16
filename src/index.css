@@ -282,8 +282,30 @@
   }
 }
 
-  /* Estilos Card Tienda */
 
+/* Estilos Buscador */
+.containerBuscador{
+  display: flex;
+  justify-content: center;
+}
+.buscador{
+  width: 50% !important;
+}
+
+/* Estilos home */
+.containerBtnSort{
+  display: flex;
+  justify-content: center;
+}
+.btn-sort{
+  background-color: #9C2E7B !important;
+  color: #FFFFFF !important;
+}
+.btn-sort:hover{
+  background-color: #FFF540 !important;
+  color: #282820 !important;
+}
+  /* Estilos Card Tienda */
   .ulCards li{
     list-style: none;
   }
@@ -519,3 +541,16 @@
   .ul-rrss li{
     list-style-type: none;
   }
+
+  /* Media Queries footer */
+@media screen and (max-width: 768px) {
+  .footer-rrss .ul-rrss li {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-rrss  .ul-rrss li {
+    font-size: 0.6em;
+  }
+}
