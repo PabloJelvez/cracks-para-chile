@@ -11,6 +11,7 @@ import AboutUs from "./views/AboutUs";
 import Profile from "./views/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
 import SignUp from "./views/SignUp";
+import Notfound from "./views/Notfound";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="*" element={<Notfound />} />
           </Routes>
           <Footer />
         </main>
